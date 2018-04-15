@@ -15,10 +15,10 @@ test_sample = test.join(sample.set_index('Id'), on='Id') #juntando preços com o
 dataset_train = train[['GrLivArea', 'SalePrice']]
 dataset_test = test_sample[['GrLivArea', 'SalePrice']]
 
-X_train = dataset_train.iloc[:, :-1].values #ano
+X_train = dataset_train.iloc[:, :-1].values #area de estar
 Y_train = dataset_train.iloc[:, 1].values #preço
 
-X_test = dataset_test.iloc[:, :-1].values #ano
+X_test = dataset_test.iloc[:, :-1].values #area de estar
 Y_test = dataset_test.iloc[:, 1].values #preço
 
 ### Treinamento ###
